@@ -1,0 +1,102 @@
+main{
+    margin: 0;
+    background-image:linear-gradient(0deg, rgba(0,0,0,0.3)0%, rgba(0,0,0,0.3)100%), url(../img/pexels-javon-swaby-3279691.jpg);
+    
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    min-height: 100vh;
+    /* filter: blur(10px); */
+}
+
+
+
+
+
+.titulo{
+    text-align: center;
+    background-color: #000;
+    color: #fff;
+    font-size: 60px;
+    padding: 20px;
+}
+
+.carta{
+    width: 150px;
+    position: relative;
+    left: 100px;
+    margin-left: -75px ;
+}
+
+#computadora-cartas, #jugador-cartas{
+    height: 240px;
+}
+
+.pop-up{
+    display: none;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    
+}
+
+
+.active{
+    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 95%;
+    max-width: 800px;
+    margin: 0 20 0;
+
+}
+
+.img-up{
+    position: absolute;
+    left: 0%;
+    display: block;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    padding: 20px;
+
+}
+
+.text-up{
+    color: #020202;
+    font-size: 50px;
+    position: absolute;
+    display: block;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    top: 90%;
+    left: 0%;
+    
+
+}
+
+@media screen and (max-width:768px){
+    #jugador-cartas, #computadora-cartas{
+        text-align: initial;
+    }
+    .carta{
+        width: 120px;
+        
+    }
+    .titulo{
+        
+        font-size: 40px;
+        
+    }
+
+    main{
+        background-image: linear-gradient(0deg, rgba(0,0,0,0.3)0%, rgba(0,0,0,0.3)100%), url(../img/pexels-anna-shvets-6664182.jpg);
+    }
+
+  
+}
